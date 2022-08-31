@@ -1,0 +1,42 @@
+{
+  "name": "@thenextwallet/next-wallet-selector",
+  "version": "0.0.13-alpha.2",
+  "type": "commonjs",
+  "main": "dist/index.js",
+  "files": [
+    "/dist"
+  ],
+  "scripts": {
+    "prebuild": "rm -rf dist",
+    "build": "yarn prebuild && tsc",
+    "deploy": "yarn build && npm publish --access public"
+  },
+  "dependencies": {
+    "@near-wallet-selector/core": "^6.0.1",
+    "@near-wallet-selector/wallet-utils": "^6.0.1",
+    "near-api-js": "^0.44.2"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "5.13.0",
+    "@typescript-eslint/parser": "5.13.0",
+    "eslint": "~8.15.0",
+    "eslint-config-prettier": "8.1.0",
+    "typescript": "~4.7.2"
+  },
+  "description": "This is the [Next Wallet](https://thenextwallet.com/) package for NEAR Wallet Selector.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheNextWallet/next-wallet-selector.git"
+  },
+  "keywords": [
+    "next",
+    "wallet-selector",
+    "near"
+  ],
+  "author": "thenextwallet",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheNextWallet/next-wallet-selector/issues"
+  },
+  "homepage": "https://github.com/TheNextWallet/next-wallet-selector#readme"
+}
